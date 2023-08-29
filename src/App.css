@@ -44,7 +44,7 @@ article h1 {
 }
 
 p {
-  color: #B97C7C;
+  color: #CE9898;
 
   font-size: 16px;
   font-style: normal;
@@ -159,20 +159,17 @@ button:hover {
   width: 642px;
 }
 
-@media (max-width: 550px) {
+@media (max-width: 600px) {
   .brand-desktop {
     display: none;
   }
 
   .brand-mobile {
-    /* scale: 0.75; */
+    
     scale: 0.75;
 
     display: block;
-    padding: 2rem;
-  }
-
-  .brand-mobile img {
+    padding: 1rem;
   }
 
   html, body{
@@ -186,7 +183,7 @@ button:hover {
   }
 
   .girl-picture {
-    /* display: none; */
+    
     height: 300px;
     width: 100%;
 
@@ -205,5 +202,58 @@ button:hover {
     display: flex;
     flex-wrap: nowrap;
     width: 100%;
+  }
+
+  form {
+    width: 100%;
+    height: 50px;
+  }
+
+  input {
+    width: 100%;
+    height: 50px;
+  }
+
+  button {
+    width: 64px;
+    height: 50px;
+  }
+}
+
+@media (max-width: 400px) {
+  .brand-mobile{
+    padding: 1rem;
+  }
+  
+  .girl-picture {
+    height: 250px;
+    margin-bottom: 2.5rem;
+  }
+  
+  article h1 {
+    font-size: 52px;
+    letter-spacing: 16px;
+  }
+
+  p {
+    margin-top: 1rem;
+  }
+
+  form {
+    margin-top: 1rem;
+  }
+
+}
+
+@media (max-width: 355px) {
+  article h1 {
+    font-size: 46px;
+    letter-spacing: 14px;
+    line-height: 58px;
+  }
+
+  input {
+    padding-left: 1.25rem;
+    font-size: 13px;
   }
 }
